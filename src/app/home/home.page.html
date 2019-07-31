@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-card (tap)="handleTap()" id="custom">
+      <ion-card-header color="primary">
+          <ion-title>Tap</ion-title>
+          <ion-card-content>
+            {{count}}
+          </ion-card-content>
+      </ion-card-header>
+    </ion-card><br>
+
+    <ion-card (swipe)="handleSwipe()"id="custom">
+        <ion-card-header color="secondary">
+            <ion-title>Swipe</ion-title>
+            <ion-card-content>
+                {{count1}}
+              </ion-card-content>
+        </ion-card-header  >
+      </ion-card><br>
+      <ion-card (press)="handlePress()"id="custom">
+          <ion-card-header color="tertiary">
+              <ion-title>Press</ion-title>
+              <ion-card-content>
+                  {{count2}}
+                </ion-card-content>
+          </ion-card-header>
+        </ion-card><br>
+        <ion-card (pan)="handlePan()"id="custom">
+            <ion-card-header color="success">
+                <ion-title>Pan</ion-title>
+                <ion-card-content>
+                    {{count3}}
+                  </ion-card-content>
+            </ion-card-header>
+          </ion-card><br>
+          <ion-card (pinch)="handlePinch()"id="custom">
+              <ion-card-header color="warning">
+                  <ion-title>Pinch</ion-title>
+                  <ion-card-content>
+                      {{count4}}
+                    </ion-card-content>
+              </ion-card-header>
+            </ion-card>
+  </div>
+</ion-content>
